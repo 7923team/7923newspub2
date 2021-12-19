@@ -1,0 +1,17 @@
+news\beans\Newstype.class
+news\servlet\checkUserRegisterServlet.class
+news\beans\UserDAO.class
+news\beans\Comment.class
+news\beans\News.class
+news\servlet\NewsServlet.class
+news\beans\NewstypeDAO.class
+news\beans\DBGet.class
+news\beans\User.class
+news\servlet\CommentServlet.class
+news\beans\NewsDAO.class
+news\beans\CommentDAO.class
+news\beans\NewsPageBean.class
+news\servlet\checklogin.class
+news\util\DateTimeUtil.class
+news\servlet\refresh.class
+news\servlet\image.class
