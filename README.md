@@ -17,8 +17,8 @@
 
   若要修改数据库连接信息，则要修改的文件有：
 
-1. DBGet.java、
-2. AllUser.jsp、
-3. deleteNews.jsp、
-4. deleteUser.jsp、
-5. doModiUser.jsp。
+1. DBGet.java
+2. AllUser.jsp
+3. deleteNews.jsp
+4. deleteUser.jsp
+5. doModiUser.jsp
