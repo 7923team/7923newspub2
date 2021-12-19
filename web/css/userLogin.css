@@ -1,0 +1,52 @@
+/* 登录页右侧主体内容排版 */
+div.top-bar{
+	padding-bottom: 10px;
+}
+
+div.top-bar h1{
+	color: #40b7ed;
+	margin-bottom: 15px;
+	margin-left: auto;
+	text-align: center;
+}
+
+.inputform{
+	background-color: #e8f3fb;
+	width: 540px;
+	margin: 10px auto 0px auto;
+	border-radius: 8px;
+	padding-bottom: 20px;
+}
+
+.inputform form{
+	text-align: center;
+	margin:0px auto;
+}
+
+.inputform table{
+	text-align: center;
+	margin: 20px auto;
+}
+
+#login_input{
+	width: 220px;
+	height: 24px;
+}
+
+#login_btn{
+	cursor: pointer;
+	width: 96px;
+	height: 36px;
+	background: #4e6ef2;
+	color: #fff;
+	font-size: 14px;
+    font-weight: 400;
+	border: none;
+	margin-left: 5px;
+}
+#login_btn:hover{
+	background: #3159f8;
+}
+#login_btn:active{
+    background: #1140fa;
+}

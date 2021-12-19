@@ -1,0 +1,96 @@
+h2{
+    margin: 0px auto 12px auto;
+}
+h2 a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.fbpl{
+    width: 750px;
+    margin: 0px auto;
+}
+.fbpl .fd{
+    float: left;
+}
+.fbpl .fdr{
+    float: right;
+}
+
+#btnSubmitBottom{
+    cursor: pointer;
+    width: 110px;
+    height: 28px;
+    background: red;
+    border: 1px solid rgb(207, 5, 5);
+    color: #ffffff;
+    font-weight: 400;
+    border-radius: 2px;
+}
+#btnSubmitBottom:hover{
+    background: rgb(233, 3, 3);
+}
+#btnSubmitBottom:active{
+    background: rgb(255, 23, 23);
+}
+
+
+.main_top{
+    text-align: center;
+    margin: 12px auto 0px auto;
+    padding: 6px 0px 12px 0px;
+}
+
+#commentMessage{
+    border: 1px solid rgb(204, 204, 204);
+    height: 70px;
+    width: 750px;
+    max-width: 750px;
+    min-width: 750px;
+    min-height: 70px;
+    margin: 0px auto;
+}
+
+.mian{
+    padding: 6px 0px;
+    margin: 0px auto;
+}
+
+.mian,
+.main_top{
+    width: 786px;
+    background-color: #e8f3fb;
+    border-radius: 8px;
+}
+
+.mian .nr{
+    width: 750px;
+    margin: 0px auto;
+}
+
+.yc{
+    padding-top: 16px;
+}
+
+#mian_span{
+    margin-left: 15px;
+    color: blueviolet;
+    font-weight: 40px;
+    font-size: larger;
+}
+
+.blank8{
+    width: 750px;
+    height: 0px;
+    border: 0.5px dashed #808080;
+    margin: 10px auto;
+}
+
+.blank9{
+    width: 750px;
+    height: 2px;
+    background-color: rgb(166, 70, 255);
+    border: none;
+    margin: 6px 0px 16px 16px;
+}

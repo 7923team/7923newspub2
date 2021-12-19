@@ -1,0 +1,45 @@
+/* 新闻内容主体 */
+div.news_disp{
+	padding: 0px 3%;
+    /* height: 515px; */
+}
+
+.right-t{
+    float: right;
+}
+
+/* 正文排版 */
+.left_zw{
+    text-indent: 2em;
+    line-height: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.left_zw,
+.div624{
+    margin-top: 5px;
+    padding: 12px 5px;
+    border-top: 2px dashed;
+}
+
+.div624 ul{
+    padding-left: 2px;
+}
+
+.div624 li{
+    list-style: none;
+    line-height: 1.5em;
+}
+
+.div624 a{
+    text-decoration: none;
+}
+
+.div624 a:hover{
+    text-decoration: underline;
+}
+
+div.news_disp h2{
+    text-align: center;
+    margin: 15px auto;
+}

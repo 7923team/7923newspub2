@@ -1,0 +1,30 @@
+table{
+    margin: 35px auto 50px auto;
+    border: 1px solid;
+    min-width: 200px;
+    max-width: 640px;
+}
+.inputform table td{
+    border: 1px solid;
+}
+
+form{
+    text-align: center;
+}
+#form_btn{
+	cursor: pointer;
+	width: 96px;
+	height: 36px;
+	background: #4e6ef2;
+	color: #fff;
+	font-size: 14px;
+    font-weight: 400;
+	border: none;
+	margin: 0px auto;
+}
+#form_btn:hover{
+	background: #3159f8;
+}
+#form_btn:active{
+    background: #1140fa;
+}

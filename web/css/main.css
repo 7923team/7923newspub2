@@ -1,0 +1,325 @@
+body {
+	margin-top: 0px;
+	margin: 0;
+	padding: 0;
+}
+
+
+/*====================================*/
+/* logo区域背景图 */
+div#logo {
+	background: url("../image/top_bg.jpg") no-repeat center;
+	background-size: 100%;
+	height: 109px;
+	width: 1199px;
+	margin: 0 auto 10px;
+	box-shadow: #999999 0 5px 6px;
+}
+
+/* logo区域文字 */
+div#logo_main {
+	margin: 0 auto;
+	padding-top: 6px;
+	width: 100%;
+	height: 69px;
+	color: whitesmoke;
+	text-align: center;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div#logo_main span {
+	font-size: 50px;
+}
+/*====================================*/
+
+
+/*====================================*/
+/* 菜单导航栏 */
+#menu {
+	margin: 0 auto;
+	padding-top: 10px;
+	width: 1199px;
+	text-align: center;
+	color: #0000ff;
+	background: #e8f3fb;
+	border-bottom: solid 1px #bfdaf5;
+	height: 30px;
+	clear: both;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+#menu #user {
+	float: left;
+	margin: 0 20px;
+}
+#menu #menu_list {
+	float: right;
+	height: 30px;
+	margin: 0 20px;
+}
+#user a,#menu_list a{
+	text-decoration: none;
+}
+#menu_list ul {
+	float: right;
+	margin: 0;
+}
+#menu li {
+	display: inline;
+}
+#menu li a,
+#menu #user a {
+	padding: 3px 5px;
+	color: #0000ff;
+}
+#menu li a:hover {
+	color: #ffffff;
+	background: #40b7ed;
+}
+/*====================================*/
+
+
+
+/*====================================*/
+/* 内容主体（左+右）整体样式 */
+#content {
+	width: 1199px;
+	height: 495px;
+	margin: 0 auto;
+}
+/*====================================*/
+
+
+/*====================================*/
+/* 左侧栏整体样式 */
+#sidebar {
+	width: 378px;
+	height: 480px;
+	float: left;
+	border: solid 1px #bfdaf5;
+	padding-bottom: 10px;
+}
+
+/* 左侧栏各个子模块样式 */
+.sidesec {
+	width: 370px;
+}
+.sidesec a {
+	text-decoration: none;
+	color: #000000;
+}
+.sidesec .sidesec_list a:hover {
+	color: blue;
+	/* text-decoration: underline; */
+}
+.sideform {
+	margin: 5px auto;
+	height: 40px;
+	text-align: center;
+}
+#leftdiv,
+#rightdiv{
+	display: inline-block;
+}
+
+#leftdiv #q{
+	height: 24px;
+	width: 190px;
+}
+
+/* 搜索按钮样式 */
+#rightdiv #submitBtn{
+	cursor: pointer;
+	width: 66px;
+	height: 31px;
+	background: #4e6ef2;
+	color: #fff;
+	font-size: 14px;
+    font-weight: 400;
+	border: none;
+	margin-left: 5px;
+}
+#rightdiv #submitBtn:hover{
+	background-color: #3159f8;
+}
+#rightdiv #submitBtn:active{
+	background-color: #1140fa;
+}
+
+/* 左栏文字部分 */
+.sidesec_bt {
+	margin: 10px 10px 0;
+	width: 100px;
+	font-weight: bold;
+}
+.sidesec hr {
+	margin-top: 0;
+	width: 350px;
+	height: 1.5px;
+	background-color: #363636;
+	border: none;
+}
+#sidebar ul {
+	padding-left: 20px;
+	height: 148px;
+	overflow: auto;
+}
+#sidebar ul li {
+	list-style: none;
+	margin-bottom: 8px;
+	/* height: 27px; */
+}
+/*====================================*/
+
+
+/*====================================*/
+/* 右侧栏整体样式 */
+#main {
+	width: 808px;
+	height: 490px;
+	float: right;
+	border: solid 1px #bfdaf5;
+	overflow: auto;
+	position: relative;
+}
+/*====================================*/
+
+
+/*====================================*/
+/* 主页新闻条目样式 */
+#news_list a {
+	text-decoration: none;
+	color: #000000;
+}
+#news_list a:hover {
+	color: #0000ff;
+	text-decoration: underline;
+}
+#news_list h1{
+	margin-left: auto;
+	text-align: center;
+}
+#news_list ul {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#news_list li {
+	/* width:610px; */
+	height:25px;
+	list-style: none;
+	margin: 6px auto;
+}
+#news_ul{
+	margin-top: 40px;
+}
+.dd_lm,
+.dd_bt,
+.dd_time {
+	display: inline;
+}
+.dd_lm{
+	margin-right: 10px;
+}
+.dd_time {
+	float: right;
+}
+/*====================================*/
+
+
+
+/*====================================*/
+/* 底部横线 */
+.blank20,
+.blank10 {
+	margin: 2px auto;
+	width: 1199px;
+}
+.blank20 {
+	height: 5px;
+	background: #e8f3fb;
+}
+.blank10 {
+	height: 2.5px;
+	background: #4e6ef2;
+}
+/*====================================*/
+
+
+/*====================================*/
+/* 页脚 */
+#footer {
+	text-align: center;
+	padding-inline: 5px auto;
+	margin: 2px auto;
+}
+.banq {
+	color: #999999;
+	text-align: center;
+	width: 1199px;
+	padding-top: 2px;
+	/* padding-bottom: 2px; */
+	margin: 3px auto 0px auto;
+	line-height: 22px;
+	background-color: #e8f3fb;
+}
+/*====================================*/
+
+
+
+/*====================================*/
+/* 右侧表格样式（用户管理 + 新闻管理 + 评论管理） */
+div.top-bar h1{
+	color: #4e8bc4;
+    margin: 15px auto 15px auto;
+	text-align: center;
+}
+.listing{
+	margin: auto;
+	width: 92%;
+}
+.listing th,
+.listing td
+{
+	border:1px solid #fff;
+	text-align:center;
+}	
+.listing th {
+	background:#6b6dfc;
+	/* background: #40b7ed; */
+	color:#fff;
+	padding:5px;
+}
+.listing td {
+	background:#c9e7ff;
+	color:#000;
+	padding:3px 5px;
+}
+
+.listing td a{
+	text-decoration: none;
+}
+.listing td a:hover{
+	text-decoration: underline;
+}
+/*====================================*/
+
+
+
+/*====================================*/
+/* 分页页码样式 */
+#page_Number{
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	margin: 15px auto;
+	width: 100%;
+}
+#page_Number a{
+	text-decoration: none;
+}
+#no_news{
+	text-align: center;
+	color: #808080;
+	margin-top: 240px;
+}
+/*====================================*/

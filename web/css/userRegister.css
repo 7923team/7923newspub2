@@ -1,0 +1,62 @@
+/* 注册页右侧主体内容排版 */
+div.top-bar{
+	padding-bottom: 10px;
+}
+
+div.top-bar h1{
+	color: #40b7ed;
+	margin-bottom: 15px;
+	margin-left: auto;
+	text-align: center;
+}
+
+.inputform{
+	background-color: #e8f3fb;
+	width: 560px;
+	margin: 10px auto 0px auto;
+	border-radius: 8px;
+	padding-bottom: 3px;
+}
+
+.inputform form{
+	text-align: center;
+}
+
+.inputform table{
+	text-align: center;
+	margin: 8px auto;
+}
+
+.inputform form tr{
+	height: 36px;
+}
+
+.register_input{
+	width: 230px;
+	height: 22px;
+}
+
+#form_btn{
+	cursor: pointer;
+	width: 96px;
+	height: 36px;
+	background: #4e6ef2;
+	color: #fff;
+	font-size: 14px;
+    font-weight: 400;
+	border: none;
+	margin-left: 5px;
+}
+#form_btn:hover{
+	background: #3159f8;
+}
+#form_btn:active{
+    background: #1140fa;
+}
+
+
+div#tologin{
+	font-size: 15px;
+	text-align: center;
+	margin: 14px auto 0px auto;
+}

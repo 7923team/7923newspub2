@@ -1,0 +1,9 @@
+<%@page language="java" contentType="text/html;charset=UTF-8"%>
+<div id="footer">
+	<!--版权-->
+		<div class="banq">
+			本站部分内容来源于网络素材，不代表本网站观点。<br>
+			本网站仅用于学习研究，未经书面授权，禁止复制与转载，违者必究。<br>
+			版权所有&nbsp;&copy;&nbsp;2021&nbsp;高士涛&nbsp;All&nbsp;rights&nbsp;reserved.
+		</div>
+</div>

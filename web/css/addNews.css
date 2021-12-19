@@ -1,0 +1,66 @@
+/* 右侧主体内容排版 */
+div.top-bar{
+	padding-bottom: 10px;
+}
+
+div.top-bar h1{
+	color: black;
+    margin: 15px auto 15px auto;
+	text-align: center;
+}
+
+.inputform{
+	background-color: #e8f3fb;
+	width: 560px;
+    padding-bottom: 10px;
+	margin: 20px auto 0px auto;
+	/* border-radius: 8px; */
+}
+
+.inputform form{
+	text-align: center;
+	margin:20px auto;
+}
+
+#title{
+    width: 380px;
+}
+#keword{
+    width: 222px;
+}
+#content_area{
+    /* width: 380px;
+    height: 100px; */
+    max-width: 380px;
+    min-width: 380px;
+    max-height: 160px;
+    min-height: 100px;
+}
+
+
+#form_btn{
+	cursor: pointer;
+	width: 96px;
+	height: 36px;
+	background: #4e6ef2;
+	color: #fff;
+	font-size: 14px;
+    font-weight: 400;
+	border: none;
+	margin-left: 5px;
+}
+#form_btn:hover{
+	background: #3159f8;
+}
+#form_btn:active{
+    background: #1140fa;
+}
+
+
+/* addNews页面主体部分
+.addnewsform{
+	width: 200px;
+	height: 400px;
+	text-align: center;
+	margin: 0 auto;
+} */

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5"
+  xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>newsServlet</servlet-name>
+        <servlet-class>news.servlet.NewsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>newsServlet</servlet-name>
+        <url-pattern>/news</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>commentServlet</servlet-name>
+        <servlet-class>news.servlet.CommentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>commentServlet</servlet-name>
+        <url-pattern>/comment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>image</servlet-name>
+        <servlet-class>news.servlet.image</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>image</servlet-name>
+        <url-pattern>/image</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>checklogin</servlet-name>
+        <servlet-class>news.servlet.checklogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>checklogin</servlet-name>
+        <url-pattern>/checklogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>refresh</servlet-name>
+        <servlet-class>news.servlet.refresh</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>refresh</servlet-name>
+        <url-pattern>/refresh</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>checkUserRegisterServlet</servlet-name>
+        <servlet-class>news.servlet.checkUserRegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>checkUserRegisterServlet</servlet-name>
+        <url-pattern>/checkUserRegisterServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
