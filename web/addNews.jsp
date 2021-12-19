@@ -54,6 +54,6 @@
 		</div>
 		<div class="blank20"></div>
 		<div class="blank10"></div>
-		<%@include file="../common/bottom.txt"%>
+		<%@include file="common/bottom.txt"%>
 	</body>
 </html>
