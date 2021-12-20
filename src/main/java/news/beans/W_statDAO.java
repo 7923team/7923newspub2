@@ -24,7 +24,6 @@ public class W_statDAO {
             SqlSession session = sqlSessionFactory.openSession();
             W_statMapper w_statMapper = session.getMapper(W_statMapper.class);
             wStatsList = w_statMapper.wstatlist();
-
         } catch (IOException e) {
             e.printStackTrace();
         }

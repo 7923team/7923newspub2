@@ -11,12 +11,12 @@
     <typeAliases>
         <package name="news"/>
     </typeAliases>
-    <plugins>
-        <!-- com.github.pagehelper为PageHelper类所在包名 -->
-        <plugin interceptor="com.github.pagehelper.PageInterceptor">
-            <!-- 什么都不配，使用默认的配置 -->
-        </plugin>
-    </plugins>
+<!--    <plugins>-->
+<!--        &lt;!&ndash; com.github.pagehelper为PageHelper类所在包名 &ndash;&gt;-->
+<!--        <plugin interceptor="com.github.pagehelper.PageInterceptor">-->
+<!--            &lt;!&ndash; 什么都不配，使用默认的配置 &ndash;&gt;-->
+<!--        </plugin>-->
+<!--    </plugins>-->
     <environments default="development">
         <environment id="development">
             <!--jdbc 采用jdbc事务管理-->
@@ -33,6 +33,7 @@
     <!--配置映射文件-->
     <mappers>
         <mapper resource="mapper/W_statMapper.xml"/>
+<!--        <mapper class="news.mapper.W_statMapper"/>-->
     </mappers>
 </configuration>
 

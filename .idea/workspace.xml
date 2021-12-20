@@ -10,19 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cad770ef-866f-4b81-b645-f286d1e9d927" name="默认变更列表" comment="master">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/news/mapper/W_statMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/W_statMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7923newspub2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/7923newspub2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/news/beans/W_statDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/news/beans/W_statDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/W_statMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/W_statMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-conf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-conf.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/W_statMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/W_statMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mybatis-conf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-conf.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mysql.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mysql.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/W_statDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/news/beans/W_statDAO.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +182,7 @@
       <workItem from="1639900139209" duration="1669000" />
       <workItem from="1639901850530" duration="5847000" />
       <workItem from="1639960309969" duration="10753000" />
-      <workItem from="1639980246279" duration="455000" />
+      <workItem from="1639980246279" duration="2815000" />
     </task>
     <task id="LOCAL-00001" summary="master">
       <created>1639902036587</created>
@@ -218,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639969497241</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="master">
+      <created>1639980753503</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1639980753503</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
