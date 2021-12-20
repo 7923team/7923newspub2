@@ -9,7 +9,7 @@
         <setting name="cacheEnabled" value="true" />
     </settings>
     <typeAliases>
-        <package name="news.beans"/>
+        <package name="news"/>
     </typeAliases>
     <plugins>
         <!-- com.github.pagehelper为PageHelper类所在包名 -->
@@ -32,7 +32,7 @@
     </environments>
     <!--配置映射文件-->
     <mappers>
-
+        <mapper resource="mapper/W_statMapper.xml"/>
     </mappers>
 </configuration>
 

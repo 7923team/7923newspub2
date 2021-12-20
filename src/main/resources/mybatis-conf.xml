@@ -32,7 +32,7 @@
     </environments>
     <!--配置映射文件-->
     <mappers>
-
+        <mapper resource="mapper/W_statMapper.xml"/>
     </mappers>
 </configuration>
 
