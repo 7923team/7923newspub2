@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--配置加载mysql配置文件-->
+    <properties resource="mysql.properties"/>
+    <settings>
+        <setting name="cacheEnabled" value="true" />
+    </settings>
+    <typeAliases>
+        <package name="news.beans"/>
+    </typeAliases>
+    <plugins>
+        <!-- com.github.pagehelper为PageHelper类所在包名 -->
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <!-- 什么都不配，使用默认的配置 -->
+        </plugin>
+    </plugins>
+    <environments default="development">
+        <environment id="development">
+            <!--jdbc 采用jdbc事务管理-->
+            <transactionManager type="JDBC"/>
+            <!--配置数据源type=“”POOLED 采用的数据库连接池-->
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.databaseurl}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!--配置映射文件-->
+    <mappers>
+
+    </mappers>
+</configuration>
+

@@ -8,20 +8,6 @@
 	</script>
 </div>
 <div id="menu">
-	<%-- <!-- 1、接收请求转发方式的数据 -->
-	<div id="user">
-		<%
-			String username = request.getParameter("username");
-			if(username == null){
-		%>
-			<a href="userLogin.jsp">用户登录</a>
-		<%} else {%>
-			当前用户：<%=username%> |
-			<a href="doLogout.jsp">退出登录</a>
-		<%}%>
-	</div> --%>
-
-	<!-- 2、接收重定向方式的数据+EL+JSTL -->
 	<div id="user">
 		<c:choose>
 			<c:when test="${empty sessionScope.username}">
@@ -49,7 +35,7 @@
 					</c:otherwise>
 				</c:choose>
 			</c:if>
-						<li><a href="ciyun.jsp">词云</a></li> |
+						<li><a href="ciYunServlet">新闻词云</a></li> |
 						<li><a href="index.jsp">首 页</a></li>
 		</ul>
 	</div>

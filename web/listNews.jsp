@@ -4,8 +4,12 @@
 	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtnl1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <%--<%--%>
-<%--	Process process = Runtime.getRuntime().exec("python \"G:\\Java Idea Projects\\7923newsPub\\web\\python\\python\\demo4.py\"");--%>
-<%--	Process process = Runtime.getRuntime().exec("cmd.exe /k start python \"G:\\Java Idea Projects\\7923newsPub\\web\\python\\python\\demo4.py\"");--%>
+<%--	Process process = Runtime.getRuntime().exec("python python/demo4.py");--%>
+<%
+	Process proc = Runtime.getRuntime().exec("cmd /c python "+"D:/IdeaProjects/7923newspub2/web/python/"+"demo4.py");    //filepath是test.py的地址。可以取相对地址，以项目所在地址为根目录
+	proc.waitFor();
+%>
+	<%--Process process = Runtime.getRuntime().exec("cmd.exe /k start python \"G:\\Java Idea Projects\\7923newsPub2\\web\\python\\python\\demo4.py\"");--%>
 <%--	Process process = Runtime.getRuntime().exec("cmd.exe");--%>
 <%--%>--%>
 	<head>
@@ -35,16 +39,17 @@
 					</script>
 					<ul id="news_ul">
 						<c:forEach items="${requestScope.newsList}" var="news">
-							<li>
-								<div class="dd_lm">[${news.nt}]</div>
-								<div class="dd_bt">
-									<a href="dispNews.jsp?id=${news.id} ">
-										${news.title}
-									</a>
-								</div>
-								<div class="dd_time">${news.pubtime}</div>
-							</li>
+							<a href="dispNews.jsp?id=${news.id} ">
+								<li>
+									<div class="dd_lm">[${news.nt}]</div>
+									<div class="dd_bt">
+											${news.title}
+									</div>
+									<div class="dd_time">${news.pubtime}</div>
+								</li>
+							</a>
 						</c:forEach>
+						<hr style="margin: 0; padding: 0; height: 0px; border-top: 1px gray dotted; border-bottom: none;">
 					</ul>
 				</div>
 				<c:if test="${pageCount>0}">

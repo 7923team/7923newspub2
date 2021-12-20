@@ -9,7 +9,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cad770ef-866f-4b81-b645-f286d1e9d927" name="默认变更列表" comment="master" />
+    <list default="true" id="cad770ef-866f-4b81-b645-f286d1e9d927" name="默认变更列表" comment="master">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/cos.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7923newspub2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/7923newspub2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/7923newspub2-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ciyun.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ciyun.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/common/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/common/top.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/listNews.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/listNews.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/python/demo4.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/python/demo4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/python/imge.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/python/imge/ciyun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/web/python/imge/ciyun.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/python/imge/wbcy.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/python/imge/wbcy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/python/zf2.txt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,9 +57,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib" />
-    <property name="project.structure.last.edited" value="项目" />
+    <property name="project.structure.last.edited" value="工件" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -48,6 +68,17 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.53" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.53" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/newspub2/index.jsp" />
       <option name="BROWSER_ID" value="b2a9dca7-9d0b-4e1e-98a8-afb19c1328d2" />
@@ -147,7 +178,8 @@
       <option name="presentableId" value="Default" />
       <updated>1639900137897</updated>
       <workItem from="1639900139209" duration="1669000" />
-      <workItem from="1639901850530" duration="1028000" />
+      <workItem from="1639901850530" duration="5847000" />
+      <workItem from="1639960309969" duration="5392000" />
     </task>
     <task id="LOCAL-00001" summary="master">
       <created>1639902036587</created>
@@ -156,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639902036587</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="master">
+      <created>1639902897845</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1639902897845</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

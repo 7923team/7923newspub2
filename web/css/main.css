@@ -8,12 +8,12 @@ body {
 /*====================================*/
 /* logo区域背景图 */
 div#logo {
-	background: url("../image/top_bg.jpg") no-repeat center;
+	background: url("../image/top_bg2.jpg") no-repeat center;
 	background-size: 100%;
 	height: 109px;
 	width: 1199px;
 	margin: 0 auto 10px;
-	box-shadow: #999999 0 5px 6px;
+	box-shadow: #999999 0 3px 7px;
 }
 
 /* logo区域文字 */
@@ -22,7 +22,7 @@ div#logo_main {
 	padding-top: 6px;
 	width: 100%;
 	height: 69px;
-	color: whitesmoke;
+	color: #000000;
 	text-align: center;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -191,12 +191,13 @@ div#logo_main span {
 	text-decoration: none;
 	color: #000000;
 }
-#news_list a:hover {
+/* #news_list a:hover {
 	color: #0000ff;
 	text-decoration: underline;
-}
+} */
 #news_list h1{
 	margin-left: auto;
+	/* margin-bottom: 13px; */
 	text-align: center;
 }
 #news_list ul {
@@ -207,11 +208,36 @@ div#logo_main span {
 	/* width:610px; */
 	height:25px;
 	list-style: none;
-	margin: 6px auto;
+	margin: 0px auto;
+	padding: 3px 6px;
+	border-top: 1px dotted gray;
+	/* border-bottom: 1px solid; */
+}
+#news_list li:hover{
+	background-color: rgba(0, 0, 0, 0.1);
 }
 #news_ul{
-	margin-top: 40px;
+	margin-top: 25px;
 }
+
+/* #news_tb{
+	color: white;
+	padding: 0 0 2px 0;
+	margin: 0;
+}
+#th_type{
+	width: 50px;
+	background-color: #33CCFF;
+}
+#th_title{
+	width: 546px;
+	background-color: #33CCFF;
+}
+#th_time{
+	width: 162px;
+	background-color: #33CCFF;
+} */
+
 .dd_lm,
 .dd_bt,
 .dd_time {
@@ -240,7 +266,7 @@ div#logo_main span {
 }
 .blank10 {
 	height: 2.5px;
-	background: #4e6ef2;
+	background: #52576b;
 }
 /*====================================*/
 
@@ -297,10 +323,12 @@ div.top-bar h1{
 
 .listing td a{
 	text-decoration: none;
+	color: #000;
 }
 .listing td a:hover{
 	text-decoration: underline;
 }
+
 /*====================================*/
 
 

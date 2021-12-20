@@ -13,6 +13,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
     <meta http-equiv="Cache-Control" content="no-cache" />
     <meta http-equiv="expires" content="0" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/ciyun.css" />
     <script src="js/fun.js" type="text/javascript" charset="UTF-8"></script>
 </head>
 
@@ -25,7 +26,32 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
     <div id="main">
         <!-- main begin -->
         <img src="python/imge/wbcy.png"/>
-        <%@include file="python/imge/ciyun.txt"%>
+
+        <table border="1" cellspacing="0">
+            <tr class="table_title">
+                <td colspan="11">
+                    <h4>新闻高频词智能统计汇总</h4>
+                </td>
+            </tr>
+            <tr class="table_item">
+                <th>高频词语</th>
+                <c:forEach var="wStat" items="${wStatsList}">
+                    <td>${wStat.name}</td>
+                </c:forEach>
+            </tr>
+            <tr class="table_item">
+                <th>出现次数</th>
+                <c:forEach var="wStat" items="${wStatsList}">
+                    <td>${wStat.num}</td>
+                </c:forEach>
+            </tr>
+            <tr class="table_item">
+                <th>排  名</th>
+                <c:forEach var="wStat" items="${wStatsList}" varStatus="status">
+                    <td>No.${status.count}</td>
+                </c:forEach>
+            </tr>
+        </table>
         <!-- main end -->
     </div>
     <script type="text/javascript">

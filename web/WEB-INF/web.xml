@@ -63,4 +63,30 @@
         <url-pattern>/checkUserRegisterServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>uploadServlet</servlet-name>
+        <servlet-class>news.servlet.uploadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>uploadServlet</servlet-name>
+        <url-pattern>/uploadServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DownloadServlet</servlet-name>
+        <servlet-class>news.servlet.DownloadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DownloadServlet</servlet-name>
+        <url-pattern>/DownloadServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ciYunServlet</servlet-name>
+        <servlet-class>news.servlet.CiYunServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ciYunServlet</servlet-name>
+        <url-pattern>/ciYunServlet</url-pattern>
+    </servlet-mapping>
 </web-app>

@@ -1,0 +1,21 @@
+table{
+    width: 750px;
+    height: 160px;
+    text-align: center;
+    margin: 20px auto 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
+    border:1px white;
+}
+
+table h4{
+    margin: 6px;
+}
+
+.table_title{
+    background-color: #79bef1;
+}
+
+.table_item{
+    background-color: #dd708d;
+}
