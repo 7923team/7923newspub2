@@ -33,7 +33,8 @@
     <!--配置映射文件-->
     <mappers>
         <mapper resource="mapper/W_statMapper.xml"/>
-<!--        <mapper class="news.mapper.W_statMapper"/>-->
+        <mapper resource="mapper/CommenMapper.xml"/>
+        <mapper resource="mapper/NewstypeMapper.xml"/>
     </mappers>
 </configuration>
 

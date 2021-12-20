@@ -35,7 +35,7 @@ public class CommentDAO {
 
     public boolean insert(Comment comment){
         boolean result = false;
-
+        comment.setCommenttime(DateTimeUtil.getNowStr());
 
         try {
             SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(Resources.getResourceAsReader("mybatis-conf.xml"));
