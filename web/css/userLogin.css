@@ -32,6 +32,14 @@ div.top-bar h1{
 	width: 220px;
 	height: 24px;
 }
+#username{
+	width: 220px;
+	height: 24px;
+}
+#password{
+	width: 220px;
+	height: 24px;
+}
 
 #login_btn{
 	cursor: pointer;

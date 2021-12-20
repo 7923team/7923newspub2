@@ -1,7 +1,7 @@
 <%@page language="java" contentType="text/html;charset=UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <div id="logo">
-	<div id="logo_main"><h1><span>新闻发布系统</span> v20</h1></div>
+	<div id="logo_main"><h1><span>7923新闻</span> v20</h1></div>
 	<span id="myspan" style="color: white; float: right; margin-right: 18px; ">时间内容</span>
 	<script type="text/javascript">
 		showTime();

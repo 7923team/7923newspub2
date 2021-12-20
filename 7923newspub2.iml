@@ -38,5 +38,6 @@
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.12" level="project" />
     <orderEntry type="library" name="lib" level="project" />
     <orderEntry type="library" name="cos" level="project" />
+    <orderEntry type="library" name="commons-fileupload" level="project" />
   </component>
 </module>
