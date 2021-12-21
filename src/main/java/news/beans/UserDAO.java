@@ -162,4 +162,49 @@ public class UserDAO{
         return userList;
     }
 
+    public boolean deleteUser(String id){
+        boolean bl = false;
+        try {
+            SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(Resources.getResourceAsReader("mybatis-conf.xml"));
+            SqlSession sqlSession = sqlSessionFactory.openSession();
+            UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+            bl = userMapper.deleteUser(id);
+            sqlSession.commit();
+            sqlSession.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return bl;
+    }
+
+    public boolean modiUser(User user){
+        boolean bl = false;
+        try {
+            SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(Resources.getResourceAsReader("mybatis-conf.xml"));
+            SqlSession sqlSession = sqlSessionFactory.openSession();
+            UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+            bl = userMapper.modiUser(user);
+            sqlSession.commit();
+            sqlSession.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return bl;
+    }
+
+    public User getUserByName(String name){
+        User user = new User();
+        try {
+            SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(Resources.getResourceAsReader("mybatis-conf.xml"));
+            SqlSession sqlSession = sqlSessionFactory.openSession();
+            UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+            user = userMapper.getUserByName(name);
+            sqlSession.commit();
+            sqlSession.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return user;
+    }
+
 }

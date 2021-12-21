@@ -20,6 +20,15 @@ public class User implements java.io.Serializable{
         this.resume = resume;
     }
 
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
+    public User(String username) {
+        this.username = username;
+    }
+
     // 各属性的置取方法
     public Integer getId(){
         return this.id;

@@ -21,65 +21,23 @@
 				<jsp:include page="common/left.jsp" />
 			</div>
 			<div id="main">
-				<!-- 1.导入JDBC API -->
-				<%@page language="java" import="java.sql.*"%>
-                
+				<%@ page import="news.beans.UserDAO" %>
+
 				<!-- main begin -->
 				<div class="inputform">
 					<div class="top-bar">
 						<h1>操作提示</h1>
 					</div><br>
 					<%
-						Connection conn = null;
-						Statement stmt = null;
-
-						String sDBDriver = "com.mysql.jdbc.Driver";
-						String sConnStr = "jdbc:mysql://localhost:3306/newsdb2?characterEncoding=UTF-8";
-						String username = "root";
-						String password = "sblive15s0323";
-						String id = null;
-
-						id = request.getParameter("id");
-
-						//2.装载驱动程序
-						try{
-							Class.forName(sDBDriver);
+						String id = request.getParameter("id");
+						UserDAO userDAO = new UserDAO();
+						boolean bl = userDAO.deleteUser(id);
+						if(bl){
+							response.sendRedirect("manageUser.jsp");
+						}else{
+							out.println("删除用户***失败***，请联系管理员！");
 						}
-						catch(ClassNotFoundException ex){
-							System.err.println(ex.getMessage());
-						}
-
-						try{
-							//3.建立数据库连接
-							conn = DriverManager.getConnection(sConnStr,username,password);
-
-							/*
-								//4.创建Statement对象
-								stmt = conn.createStatement();
-
-								//5.执行SQL语句
-								String sql = "DELETE FROM user WHERE id="+id;
-								int result = stmt.executeUpdate(sql);
-							*/
-
-							String sql = "DELETE FROM user WHERE id=?";
-							PreparedStatement ps = conn.prepareStatement(sql);
-							ps.setString(1,id);
-							int result = ps.executeUpdate();
-
-							//6.处理结果
-							if(result == 1){
-								response.sendRedirect("manageUser.jsp");
-							}else{
-								out.println("删除用户***失败***，请联系管理员！");
-							}
-							out.println("单击<a href='index.jsp'>回到首页</a>");
-						}catch(SQLException el){
-							out.println(el);
-						}finally{
-							//7.关闭连接
-							conn.close();
-						}
+						out.println("单击<a href='index.jsp'>回到首页</a>");
 					%>
 				</div>
 				<!-- main end -->

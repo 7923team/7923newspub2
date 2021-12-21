@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="news.mapper.NewsMapper">
+
+<!--1、查询所有新闻-->
+    <select id="getAllNews" resultType="news">
+        select * from news order by id desc
+    </select>
+
+<!--2、插入一条新闻-->
+    <insert id="insert" parameterType="news">
+        insert into news(title,content,author,pubtime,keyword,newstype)
+                values(#{title},#{content},#{author},#{pubtime},#{keyword},#{newstype})
+    </insert>
+
+<!--3、根据ID查询指定新闻-->
+    <select id="getByID" parameterType="string" resultType="news">
+        select * from news where id =#{value}
+    </select>
+
+<!--4、根据ID更新新闻点击量-->
+    <update id="increaseAc" parameterType="string">
+        update news set acnumber=acnumber+1 where id=#{value}
+    </update>
+
+<!--5、根据ID对应的关键字，获取与当前新闻的相关新闻-->
+    <select id="getRelate" parameterType="string" resultType="news">
+        select * from news where keyword=(select keyword from news where id=#{id}) and id!=#{id}
+    </select>
+
+<!--6、修改新闻，更新数据表中的一条记录-->
+    <update id="modify" parameterType="news">
+        update news set title=#{title},content=#{content},author=#{author},pubtime=#{pubtime},
+                        keyword=#{keyword},acnumber=#{acnumber},newstype=#{newstype} where id=#{id}
+    </update>
+
+<!--7、站内检索，通过关键字查询相关新闻-->
+    <select id="getByKeyword" parameterType="string" resultType="news">
+        select news.* , newstype.newstype as nt from news
+                left join newstype on news.newstype=newstype.id
+                where keyword like concat('%',#{value},'%') or title like concat('%',#{value},'%')
+    </select>
+
+<!--8、查询前5条热点新闻（点击量最高）-->
+    <select id="getTopNews5" resultType="news">
+        select * from news order by acnumber desc limit 5
+    </select>
+
+<!--9、查询新闻条数-->
+    <select id="getNewsCount" resultType="int">
+        select count(*) from news
+    </select>
+
+<!--10、根据起始和条数查询新闻-->
+    <select id="getNewsByST"  resultType="news">
+        select news.* , newstype.newstype as nt from news
+                left join newstype on news.newstype=newstype.id
+                order by news.id limit #{param1},#{param2}
+    </select>
+
+<!--11、根据新闻ID删除一条新闻-->
+    <delete id="deleteNews" parameterType="string">
+        delete from news where id=#{id}
+    </delete>
+
+</mapper>

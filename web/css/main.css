@@ -345,9 +345,27 @@ div.top-bar h1{
 #page_Number a{
 	text-decoration: none;
 }
-#no_news{
+#no_news1{
 	text-align: center;
 	color: #808080;
 	margin-top: 240px;
+}
+
+#tips{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#noData2{
+	text-align: center;
+	width: 260px;
+	margin: 15px auto;
+}
+#no_news2{
+	text-align: center;
+	color: #808080;
+	margin-top: 15px;
 }
 /*====================================*/

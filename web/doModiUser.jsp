@@ -21,75 +21,25 @@
 				<jsp:include page="common/left.jsp" />
 			</div>
 			<div id="main">
-				<!-- 1.导入JDBC API -->
-				<%@page language="java" import="java.sql.*"%>
-                
-				<!-- main begin -->
-				<div class="inputform">
+                <!-- main begin -->
+                <%request.setCharacterEncoding("UTF-8");%>
+                <jsp:useBean id="userDAO" class="news.beans.UserDAO" scope="page"/>
+                <jsp:useBean id="user" class="news.beans.User" scope="page"/>
+                <jsp:setProperty name="user" property="*"/>
+                <%
+                    boolean bl = userDAO.modiUser(user);
+                %>
+                <div class="inputform">
 					<div class="top-bar">
 						<h1>操作提示</h1>
 					</div><br>
                     <%
-                        Connection conn = null;
-                        Statement stmt = null;
-
-                        String sDBDriver = "com.mysql.jdbc.Driver";
-                        String sConnStr = "jdbc:mysql://localhost:3306/newsdb2?characterEncoding=UTF-8";
-                        String username = "root";
-                        String password = "sblive15s0323";
-
-                        String id=null,uname=null,upwd=null,gender=null,resume=null;
-                        request.setCharacterEncoding("UTF-8");
-                        id = request.getParameter("id");
-                        uname = request.getParameter("username");
-                        upwd = request.getParameter("password");
-                        gender = request.getParameter("gender");
-                        resume = request.getParameter("resume");
-
-                        //2.装载驱动程序
-                        try{
-                            Class.forName(sDBDriver);
+                        if(bl){
+                            out.println("用户修改成功，请继续使用。");
+                        }else{
+                            out.println("用户修改失败，请联系管理员！");
                         }
-                        catch(ClassNotFoundException ex){
-                            System.err.println(ex.getMessage());
-                        }
-
-                        try{
-                            //3.建立数据库连接
-                            conn = DriverManager.getConnection(sConnStr,username,password);
-
-                            //4.创建Statement对象
-                            //stmt = conn.createStatement();
-
-                            //5.执行SQL语句
-                            /*
-                                String sql = "UPDATE user SET username='"+uname
-                                +"',password='"+upwd+"',gender='"+gender
-                                +"',resume='"+resume+"' WHERE id=" + id;
-                                int result = stmt.executeUpdate(sql);
-                            */
-                            String sql = "UPDATE user SET username=?,password=?,gender=?,resume=? WHERE id=?";
-                            PreparedStatement ps = conn.prepareStatement(sql);
-                            ps.setString(1,uname);
-                            ps.setString(2,upwd);
-                            ps.setString(3,gender);
-                            ps.setString(4,resume);
-                            ps.setString(5,id);
-                            int result = ps.executeUpdate();
-
-                            //6.处理结果
-                            if(result == 1){
-                                out.println("用户修改成功，请继续使用。");
-                            }else{
-                                out.println("用户修改失败，请联系管理员！");
-                            }
-                            out.println("单击<a href='index.jsp'>回到首页</a>");
-                        }catch(SQLException el){
-                            out.println(el);
-                        }finally{
-                            //7.关闭连接
-                            conn.close();
-                        }
+                        out.println("单击<a href='index.jsp'>回到首页</a>");
                     %>
 				</div>
 				<!-- main end -->

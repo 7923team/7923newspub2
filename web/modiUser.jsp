@@ -22,62 +22,21 @@
 				<jsp:include page="common/left.jsp" />
 			</div>
 			<div id="main">
-				<!-- 1.导入JDBC API -->
-				<%@page language="java" import="java.sql.*"%>
+				<jsp:useBean id="userDAO" class="news.beans.UserDAO" scope="page"/>
+				<%@ page import="news.beans.User" %>
+				<%@ page import="news.beans.UserDAO" %>
 				<!-- main begin -->
 				<%
-					Connection conn = null;
-					ResultSet rs = null;
-					Statement stmt = null;
-					String sql = null;
-
-					String sDBDriver = "com.mysql.jdbc.Driver";
-					String sConnStr = "jdbc:mysql://localhost:3306/newsdb?characterEncoding=UTF-8";
-					String username = "root";
-					String password = "mysql";
-
-					int id=0;
+					int id = 0;
 					String uname=null,upwd=null,gender=null,resume=null;
 					uname = (String)session.getAttribute("username");
+					User user = userDAO.getUserByName(uname);
 
-					//2.装载驱动程序
-					try{
-						Class.forName(sDBDriver);
-					}
-					catch(ClassNotFoundException ex){
-						System.err.println(ex.getMessage());
-					}
-
-					try{
-						//3.建立数据库连接
-						conn = DriverManager.getConnection(sConnStr,username,password);
-
-						//4.创建Statement对象
-						//stmt = conn.createStatement();
-
-						//5.执行SQL语句
-						//String sql = "SELECT * FROM user WHERE username='"+uname+"'";
-						//rs = stmt.executeQuery(sql);
-
-						//用PreparedStatement对象
-						sql = "SELECT * FROM user WHERE username=?";
-						PreparedStatement ps = conn.prepareStatement(sql);
-						ps.setString(1,uname);
-						rs = ps.executeQuery();
-					
-
-						//6.处理结果
-						if(rs!=null && rs.next()){
-							id=rs.getInt(1);
-							upwd = rs.getString("password");
-							gender = rs.getString("gender");
-							resume = rs.getString("resume");
-						}
-					}catch(SQLException el){
-						out.println(el);
-					}finally{
-						//7.关闭连接
-						conn.close();
+					if(user!=null){
+						id = user.getId();
+						upwd = user.getPassword();
+						gender = user.getGender();
+						resume = user.getResume();
 					}
 				%>
 				<div class="top-bar">

@@ -49,13 +49,15 @@
 								</li>
 							</a>
 						</c:forEach>
-						<hr style="margin: 0; padding: 0; height: 0px; border-top: 1px gray dotted; border-bottom: none;">
+						<c:if test="${requestScope.newsList.size()>0}">
+							<hr style="margin: 0; padding: 0; height: 0px; border-top: 1px gray dotted; border-bottom: none;">
+						</c:if>
 					</ul>
 				</div>
 				<c:if test="${pageCount>0}">
 					<br/>
 					<div id="page_Number">
-						共有${pageCount}页，这是第${pageNo}页。
+						共${pageCount}页，第${pageNo}页。
 						<c:if test="${pageNo>1}">
 							<a href="news?pageNo=1">第一页</a>&nbsp;&nbsp;
 							<a href="news?pageNo=${pageNo-1}">上一页</a>&nbsp;&nbsp;
@@ -68,16 +70,19 @@
 				</c:if>
 
 				<c:if test="${pageCount==0}">
-					<p id="no_news">
+					<p id="no_news1">
 						目前没有新闻
 					</p>
+				</c:if>
+				<c:if test="${requestScope.newsList.size()==0}">
+					<div id="tips">
+						<img src="image/noData2.png" id="noData2" style="margin: 20px auto; width: 280px;"/>
+						<p id="no_news2">暂无相关内容，试试搜索其它关键词吧！</p>
+					</div>
 				</c:if>
 				
 			<!-- main end -->
 			</div>
-			<script type="text/javascript">
-				showTime();
-			</script>
 		</div>
 		<div class="blank20"></div>
 		<div class="blank10"></div>

@@ -35,6 +35,8 @@
         <mapper resource="mapper/W_statMapper.xml"/>
         <mapper resource="mapper/CommenMapper.xml"/>
         <mapper resource="mapper/NewstypeMapper.xml"/>
+        <mapper resource="mapper/UserMapper.xml"/>
+        <mapper resource="mapper/NewsMapper.xml"/>
     </mappers>
 </configuration>
 
