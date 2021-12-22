@@ -10,7 +10,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cad770ef-866f-4b81-b645-f286d1e9d927" name="默认变更列表" comment="master">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CommenMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/NewsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/NewstypeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/W_statMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-conf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mysql.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/Comment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/CommentDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/DBGet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/News.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/NewsDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/NewsPageBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/Newstype.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/NewstypeDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/W_stat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/W_statDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/mapper/CommenMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/mapper/NewsMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/mapper/NewstypeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/mapper/W_statMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/servlet/CiYunServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/servlet/CommentServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/servlet/DownloadServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/servlet/NewsServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/servlet/checkUserRegisterServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/servlet/checklogin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/servlet/image.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/servlet/refresh.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/servlet/uploadServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/news/util/DateTimeUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/addNews.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/addNews.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ajax.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ajax.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/userLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/userLogin.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +65,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -55,7 +100,7 @@
     <property name="project.structure.last.edited" value="工件" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -63,13 +108,15 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -176,7 +223,8 @@
       <workItem from="1639901850530" duration="5847000" />
       <workItem from="1639960309969" duration="10753000" />
       <workItem from="1639980246279" duration="8170000" />
-      <workItem from="1640046363128" duration="3091000" />
+      <workItem from="1640046363128" duration="3762000" />
+      <workItem from="1640132954244" duration="1901000" />
     </task>
     <task id="LOCAL-00001" summary="master">
       <created>1639902036587</created>
@@ -255,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640048778926</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="master">
+      <created>1640049899061</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1640049899061</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

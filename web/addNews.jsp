@@ -48,6 +48,7 @@
 						内容：<textarea name="content" id="content_area"></textarea>
 							<br><br>
 						<input type="submit" value="发布" id="form_btn">
+						<a href="manageNews.jsp">取消</a>
 					</form>
 				</div>
 			</div>

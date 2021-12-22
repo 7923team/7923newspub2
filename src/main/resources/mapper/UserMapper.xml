@@ -16,7 +16,7 @@
     </select>
 
     <select id="userlist" resultType="User">
-        select * from user
+        select * from user where username != 'admin'
     </select>
 
     <!--根据ID删除用户-->

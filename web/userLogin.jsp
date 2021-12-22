@@ -10,8 +10,8 @@
 		<meta http-equiv="expires" content="0" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<link rel="stylesheet" type="text/css" href="css/userLogin.css" />
-		<script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
 		<script src="js/fun.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
 		<script>
 			var captcha;
 
