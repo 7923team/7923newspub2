@@ -10,47 +10,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cad770ef-866f-4b81-b645-f286d1e9d927" name="默认变更列表" comment="master">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/297b48d5-bade-4393-bbe2-368e85b45600/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/297b48d5-bade-4393-bbe2-368e85b45600/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/297b48d5-bade-4393-bbe2-368e85b45600/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/CommenMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/NewsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/NewstypeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/W_statMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mybatis-conf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mysql.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/beans/Comment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/beans/CommentDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/beans/DBGet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/beans/News.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/beans/NewsDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/beans/NewsPageBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/beans/Newstype.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/beans/NewstypeDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/beans/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/beans/UserDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/beans/W_stat.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/beans/W_statDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/mapper/CommenMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/mapper/NewsMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/mapper/NewstypeMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/mapper/W_statMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/servlet/CiYunServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/servlet/CommentServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/servlet/DownloadServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/servlet/NewsServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/servlet/checkUserRegisterServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/servlet/checklogin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/servlet/image.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/servlet/refresh.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/servlet/uploadServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/news/util/DateTimeUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/297b48d5-bade-4393-bbe2-368e85b45600.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/297b48d5-bade-4393-bbe2-368e85b45600.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CommenMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/NewsMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/NewstypeMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/W_statMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-conf.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mysql.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/Comment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/CommentDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/DBGet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/News.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/NewsDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/NewsPageBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/Newstype.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/NewstypeDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/UserDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/W_stat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/beans/W_statDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/mapper/CommenMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/mapper/NewsMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/mapper/NewstypeMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/mapper/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/mapper/W_statMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/servlet/CiYunServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/servlet/CommentServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/servlet/DownloadServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/servlet/NewsServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/servlet/checkUserRegisterServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/servlet/checklogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/servlet/image.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/servlet/refresh.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/servlet/uploadServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/news/util/DateTimeUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/addNews.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/addNews.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ajax.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ajax.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/userLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/userLogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/news/beans/DBGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/news/beans/DBGet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mysql.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mysql.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/deleteNews.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/deleteNews.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/deleteUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/deleteUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/doAddNews.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/doAddNews.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/doModiNews.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/doModiNews.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/doModiUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/doModiUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/doRegister.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/doRegister.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/manageNews.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/manageNews.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/manageUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/manageUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/modiNews.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/modiNews.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/modiUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/modiUser.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +94,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="22UldrUCoMoHfoXsshx2W8TM8sq" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -96,7 +113,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="工件" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -121,9 +138,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 9.0.53" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.53" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 9.0.52" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.52" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/newspub2/index.jsp" />
-      <option name="BROWSER_ID" value="b2a9dca7-9d0b-4e1e-98a8-afb19c1328d2" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="newspub2">
@@ -225,6 +241,16 @@
       <workItem from="1639980246279" duration="8170000" />
       <workItem from="1640046363128" duration="3762000" />
       <workItem from="1640132954244" duration="1901000" />
+      <workItem from="1640135553481" duration="1274000" />
+      <workItem from="1640138934630" duration="3601000" />
+      <workItem from="1640145874182" duration="2064000" />
+      <workItem from="1640148066720" duration="1627000" />
+      <workItem from="1640336350738" duration="331000" />
+      <workItem from="1640337362977" duration="232000" />
+      <workItem from="1640436232673" duration="8000" />
+      <workItem from="1640439562029" duration="2000" />
+      <workItem from="1640442342819" duration="1374000" />
+      <workItem from="1640839824293" duration="145000" />
     </task>
     <task id="LOCAL-00001" summary="master">
       <created>1639902036587</created>
@@ -326,7 +352,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="master" />

@@ -1,5 +1,4 @@
 body {
-	margin-top: 0px;
 	margin: 0;
 	padding: 0;
 }
@@ -367,5 +366,15 @@ div.top-bar h1{
 	text-align: center;
 	color: #808080;
 	margin-top: 15px;
+}
+
+div.do_tip{
+	width: 100%;
+	text-align: center;
+	margin-top: 120px;
+}
+
+div.do_tip>span{
+	color: red;
 }
 /*====================================*/

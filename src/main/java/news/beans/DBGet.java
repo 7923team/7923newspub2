@@ -2,9 +2,9 @@ package news.beans;
 import java.sql.*;
 public class DBGet{
     static String sDBDriver = "com.mysql.jdbc.Driver";
-    static String sConnStr = "jdbc:mysql://localhost:3306/newsdb2?characterEncoding=UTF-8";
+    static String sConnStr = "jdbc:mysql://localhost:3306/newsdb?characterEncoding=UTF-8";
     static String username = "root";
-    static String password = "sblive15s0323";
+    static String password = "mysql";
 
     // 返回Connection对象
     public static Connection getConnection(){

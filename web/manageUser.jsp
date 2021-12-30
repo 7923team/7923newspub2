@@ -1,4 +1,4 @@
-<%--@include file="checkvalid.jsp"--%>
+<%@include file="checkvalid.jsp"%>
 <%@page language="java" contentType="text/html;charset=UTF-8" %>
 <%@page import="java.util.ArrayList"%>
 <%@page import="news.beans.User"%>

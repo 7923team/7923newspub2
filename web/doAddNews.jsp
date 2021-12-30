@@ -30,13 +30,20 @@
                 <jsp:useBean id="newsDAO" class="news.beans.NewsDAO" scope="page"/>
                 <jsp:useBean id="news" class="news.beans.News" scope="page"/>
                 <jsp:setProperty name="news" property="*"/>
-                <%
-                    if(newsDAO.insert(news)){
-                        out.println("新闻发布成功，单击返回<a href='manageNews.jsp'>新闻管理页面</a>");
-                    }else{
-                        out.println("新闻发布失败，请联系管理员！");
-                    }
-                %>
+                <div class="do_tip">
+					<%
+						if(news.getTitle()==null || news.getTitle()=="" || news.getContent()==null || news.getContent()==""){
+							out.println("<span>新闻发布失败！新闻标题或新闻内容不能为空！</span>");
+							out.println("<br><br>请单击并重新发布：<a href='addNews.jsp'>新闻发布页</a>");
+						}else {
+							if(newsDAO.insert(news)){
+								out.println("新闻发布成功，单击返回<a href='manageNews.jsp'>新闻管理页面</a>");
+							}else{
+								out.println("新闻发布失败，请联系管理员！");
+							}
+						}
+					%>
+				</div>
             <!-- main end -->
 			</div>
 		</div>

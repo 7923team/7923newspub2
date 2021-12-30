@@ -1,4 +1,4 @@
-<%--@include file="checkvalid.jsp"--%>
+<%@include file="checkvalid.jsp"%>
 <%@page language="java" contentType="text/html;charset=UTF-8" %>
 	<!DOCTYPE html
 		PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtnl1-transitional.dtd">
@@ -33,14 +33,16 @@
 					<div class="top-bar">
 						<h1>操作提示</h1>
 					</div><br>
-                    <%
-                        if(bl){
-                            out.println("用户修改成功，请继续使用。");
-                        }else{
-                            out.println("用户修改失败，请联系管理员！");
-                        }
-                        out.println("单击<a href='index.jsp'>回到首页</a>");
-                    %>
+                    <div class="do_tip">
+						<%
+							if(bl){
+								out.println("用户修改成功，请继续使用。");
+							}else{
+								out.println("用户修改失败，请联系管理员！");
+							}
+							out.println("单击<a href='index.jsp'>回到首页</a>");
+						%>
+					</div>
 				</div>
 				<!-- main end -->
 			</div>

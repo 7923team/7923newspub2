@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal">
+  <component name="dataSourceStorageLocal" created-in="IU-213.5744.223">
     <data-source name="newsdb2@localhost" uuid="297b48d5-bade-4393-bbe2-368e85b45600">
       <database-info product="MySQL" version="5.7.22" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.21 (Revision: 33f65445a1bcc544eb0120491926484da168f199)" dbms="MYSQL" exact-version="5.7.22" exact-driver-version="8.0">
         <extra-name-characters>#@</extra-name-characters>

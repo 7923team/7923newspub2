@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="news.mapper.CommenMapper">
+<!--    根据新闻id查找相关评论-->
+    <select id="getByNewsID" parameterType="int" resultType="Comment">
+        select * from comment where newsid=#{newsid} order by commenttime desc
+    </select>
+<!--将新闻信息插入数据库-->
+    <insert id="insert" parameterType="Comment">
+        insert into comment (comment,commentauthor,commenttime,newsid) values (#{comment},#{commentauthor},#{commenttime},#{newsid})
+     </insert>
+<!--  查询最新的五条评论-->
+    <delete id="deleteById" parameterType="string">
+        delete from comment where id=#{id}
+    </delete>
+<!--    查询最新的五条数据-->
+    <select id="getTop5" parameterType="string" resultType="Comment">
+        select * from comment order by commenttime desc limit 5
+
+    </select>
+<!--    根据用户名查找评论信息-->
+    <select id="getByUsername" parameterType="string" resultType="Comment">
+        select * from comment where commentauthor=#{username} order by commenttime desc
+
+    </select>
+<!--    查询所有评论-->
+    <select id="getAll" parameterType="string" resultType="Comment">
+        select * from  comment
+    </select>
+</mapper>

@@ -1,4 +1,3 @@
-<%--@include file="checkvalid.jsp"--%>
 <%@page language="java" contentType="text/html;charset=UTF-8" %>
 	<!DOCTYPE html
 		PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtnl1-transitional.dtd">
@@ -21,9 +20,6 @@
 				<jsp:include page="common/left.jsp" />
 			</div>
 			<div id="main">
-				<!-- 1.导入JDBC API -->
-				<%@page language="java" import="java.sql.*"%>
-                
 				<!-- main begin -->
 				<div class="inputform">
 					<div class="top-bar">
@@ -37,16 +33,26 @@
                         request.setCharacterEncoding("UTF-8");
                     %>
                     <jsp:setProperty name="user" property="*"/>
-                    <%
-                        if(userDao.addUser(user)){
-                            out.println("用户注册成功，请登录使用。");
-                            out.println("<a href='userLogin.jsp'>登录</a>");
-                        }else{
-                            out.println("用户注册失败，请联系管理员！");
-                            out.println("<a href='index.jsp'>返回首页</a>");
-                        }
-                        
-                    %>
+                    <div class="do_tip">
+						<%
+							if(user.getUsername()==null || user.getUsername()==""){
+								out.println("<span>非法操作！用户名不能为空！</span>请重新注册。");
+								out.println("<a href='userRegister.jsp'>返回注册页</a>");
+							}else if (user.getPassword()==null || user.getPassword()==""){
+								out.println("<span>非法操作！密码不能为空！</span>请重新注册。");
+								out.println("<a href='userRegister.jsp'>返回注册页</a>");
+							}else {
+								if(userDao.addUser(user)){
+									out.println("用户注册成功，请登录使用。");
+									out.println("<a href='userLogin.jsp'>登录</a>");
+								}else{
+									out.println("用户注册失败，请联系管理员！");
+									out.println("<a href='index.jsp'>返回首页</a>");
+								}
+							}
+
+						%>
+					</div>
                     
 				</div>
 				<!-- main end -->
